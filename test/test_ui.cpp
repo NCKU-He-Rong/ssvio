@@ -13,7 +13,7 @@ DEFINE_double(linear_velocity, 5.0, "车辆前进线速度 m/s");
 DEFINE_bool(use_quaternion, false, "是否使用四元数计算");
 
 DEFINE_string(kitti_dataset_path,
-              "/home/weihao/dataset/kitti/data_odometry_gray/dataset/sequences/00",
+              "/home/lio/Desktop/ssvio/dataset/00",
               "kitti dataset path");
 using namespace std;
 

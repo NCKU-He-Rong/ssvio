@@ -7,10 +7,10 @@
 #include "common/read_kitii_dataset.hpp"
 #include "chrono"
 
-DEFINE_string(config_yaml_path, "/home/weihao/codespace/ssvio/config/kitti_00.yaml",
+DEFINE_string(config_yaml_path, "/home/lio/Desktop/ssvio/config/kitti_00.yaml",
               "System config file path");
 DEFINE_string(kitti_dataset_path,
-              "/home/weihao/dataset/kitti/data_odometry_gray/dataset/sequences/00",
+              "/home/lio/Desktop/ssvio/dataset/00",
               "kitti dataset path");
 
 int main(int argc, char **argv)
@@ -31,6 +31,7 @@ int main(int argc, char **argv)
   LOG(INFO) << "Num Images: " << num_images;
 
   /// Init SLAM System
+
   ssvio::System system(fLS::FLAGS_config_yaml_path);
 
   for (int ni = 0; ni < num_images && !system.getViewUi()->ShouldQuit(); ni++)
